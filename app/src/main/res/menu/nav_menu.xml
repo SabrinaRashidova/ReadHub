@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+       <group android:checkableBehavior="single">
+              <item
+                  android:id="@+id/articlesFragment"
+                  android:icon="@drawable/ic_article"
+                  android:title="Articles"/>
+              <item
+                  android:id="@+id/bookSummariesFragment"
+                  android:icon="@drawable/ic_book_review"
+                  android:title="Book Summaries" />
+              <item
+                  android:id="@+id/learningResourcesFragment"
+                  android:icon="@drawable/ic_learning_resource"
+                  android:title="Learning Resources" />
+
+              <item
+                  android:id="@+id/quotesAndInspirationFragment"
+                  android:icon="@drawable/ic_motivational"
+                  android:title="Quotes&amp;Inspiration" />
+       </group>
+</menu>

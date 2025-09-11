@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/articlesFragment">
 
+    <fragment
+        android:id="@+id/articlesFragment"
+        android:name="com.example.readhub.ui.ArticlesFragment"
+        android:label="fragment_articles"
+        tools:layout="@layout/fragment_articles" >
+        <action
+            android:id="@+id/action_articlesFragment_to_quotesAndInspirationFragment2"
+            app:destination="@id/quotesAndInspirationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookSummariesFragment"
+        android:name="com.example.readhub.ui.BookSummariesFragment"
+        android:label="fragment_book_summaries"
+        tools:layout="@layout/fragment_book_summaries" >
+        <action
+            android:id="@+id/action_bookSummariesFragment_to_learningResourcesFragment"
+            app:destination="@id/learningResourcesFragment" />
+        <action
+            android:id="@+id/action_bookSummariesFragment_to_learningResourcesFragment3"
+            app:destination="@id/learningResourcesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/learningResourcesFragment"
+        android:name="com.example.readhub.ui.LearningResourcesFragment"
+        android:label="fragment_learning_resources"
+        tools:layout="@layout/fragment_learning_resources" />
+    <fragment
+        android:id="@+id/quotesAndInspirationFragment"
+        android:name="com.example.readhub.ui.QuotesAndInspirationFragment"
+        android:label="fragment_quotes_and_inspiration"
+        tools:layout="@layout/fragment_quotes_and_inspiration" >
+        <action
+            android:id="@+id/action_quotesAndInspirationFragment_to_bookSummariesFragment"
+            app:destination="@id/bookSummariesFragment" />
+    </fragment>
 </navigation>
