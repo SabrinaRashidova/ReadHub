@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/articlesFragment"
-        android:name="com.example.readhub.ui.ArticlesFragment"
+        android:name="com.example.readhub.ui.articles.ArticlesFragment"
         android:label="fragment_articles"
         tools:layout="@layout/fragment_articles" >
         <action
@@ -16,9 +16,9 @@
     </fragment>
     <fragment
         android:id="@+id/bookSummariesFragment"
-        android:name="com.example.readhub.ui.BookSummariesFragment"
+        android:name="com.example.readhub.ui.books.BookSummariesFragment"
         android:label="fragment_book_summaries"
-        tools:layout="@layout/fragment_book_summaries" >
+        tools:layout="@layout/fragment_books" >
         <action
             android:id="@+id/action_bookSummariesFragment_to_learningResourcesFragment"
             app:destination="@id/learningResourcesFragment" />
@@ -28,14 +28,14 @@
     </fragment>
     <fragment
         android:id="@+id/learningResourcesFragment"
-        android:name="com.example.readhub.ui.LearningResourcesFragment"
+        android:name="com.example.readhub.ui.learning_resources.LearningResourcesFragment"
         android:label="fragment_learning_resources"
         tools:layout="@layout/fragment_learning_resources" />
     <fragment
         android:id="@+id/quotesAndInspirationFragment"
-        android:name="com.example.readhub.ui.QuotesAndInspirationFragment"
+        android:name="com.example.readhub.ui.motivation.QuotesAndInspirationFragment"
         android:label="fragment_quotes_and_inspiration"
-        tools:layout="@layout/fragment_quotes_and_inspiration" >
+        tools:layout="@layout/fragment_motivation" >
         <action
             android:id="@+id/action_quotesAndInspirationFragment_to_bookSummariesFragment"
             app:destination="@id/bookSummariesFragment" />

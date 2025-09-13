@@ -5,4 +5,6 @@
     <!-- to toggle the open close button of the navigation drawer -->
     <string name="nav_open">Open</string>
     <string name="nav_close">Close</string>
+    <string name="lorem_ipsum">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</string>
+    <string name="sample_book_description">“Ikki Eshik Orasi” O‘zbekistonning og‘ir davrlari, urush va urushdan keyingi yillarda oddiy insonlarning hayoti, qismati va orzu-umidlarini tasvirlaydi. Asarda insoniylik, mehr-shafqat va hayot sinovlari oldida odamning kimligi ochib beriladi.</string>
 </resources>

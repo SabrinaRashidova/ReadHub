@@ -1,4 +1,4 @@
-package com.example.readhub.ui
+package com.example.readhub.ui.motivation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -35,7 +35,7 @@ class QuotesAndInspirationFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_quotes_and_inspiration, container, false)
+        return inflater.inflate(R.layout.fragment_motivation, container, false)
     }
 
     companion object {
