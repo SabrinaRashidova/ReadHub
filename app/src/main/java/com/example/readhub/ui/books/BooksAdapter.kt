@@ -5,9 +5,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.readhub.databinding.BookItemBinding
 
-class BooksAdapter(val items: List<BookItem>) : RecyclerView.Adapter<BooksAdapter.BooksViewHolder>() {
+class BooksAdapter(private val items: List<BookItem>) : RecyclerView.Adapter<BooksAdapter.BooksViewHolder>() {
 
-    inner class BooksViewHolder(val binding: BookItemBinding) : RecyclerView.ViewHolder(binding.root){
+    inner class BooksViewHolder(private val binding: BookItemBinding) : RecyclerView.ViewHolder(binding.root){
         fun onBind(item: BookItem){
             binding.txtTitle.text = item.title
             binding.txtAuthor.text = item.author

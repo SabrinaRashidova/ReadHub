@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="8dp"
+    android:background="@drawable/item_background"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <!--
+    val author: String,
+    val content: String,
+    val image: Int? = null -->
+
+    <TextView
+        android:id="@+id/txt_author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        tools:text = "Author Name"
+        android:textSize="18sp"
+        android:fontFamily="@font/biorhyme_extralight" />
+
+    <TextView
+        android:id="@+id/txt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        tools:text = "Author Name"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/angkor" />
+
+    <ImageView
+        android:id="@+id/iv_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="24dp"
+        android:scaleType="centerCrop"
+        tools:src = "@drawable/motivation_img"
+        android:layout_marginTop="8dp"/>
+
+
+</LinearLayout>

@@ -7,7 +7,7 @@ import com.example.readhub.databinding.ArticleItemBinding
 
 class ArticlesAdapter(private val items: List<ArticleItem>) : RecyclerView.Adapter<ArticlesAdapter.ArticleViewHolder>() {
 
-    inner class ArticleViewHolder(val binding: ArticleItemBinding) : RecyclerView.ViewHolder(binding.root){
+    inner class ArticleViewHolder(private val binding: ArticleItemBinding) : RecyclerView.ViewHolder(binding.root){
         fun onBind(item: ArticleItem){
             binding.txtTitle.text = item.title
             binding.txtAuthor.text = item.author
